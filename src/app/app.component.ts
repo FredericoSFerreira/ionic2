@@ -1,9 +1,13 @@
 import { Component } from '@angular/core';
 import { Platform } from 'ionic-angular';
 import { StatusBar, Splashscreen } from 'ionic-native';
-
 import { HomePage } from '../pages/home/home';
 import { MenuTestePage } from '../pages/menu-teste/menu-teste';
+import { GeneratedTestPage } from '../pages/generated-test/generated-test';
+import { ButtonPage } from '../pages/button/button';
+import { CardsPage } from '../pages/cards/cards';
+import { InputsPage } from '../pages/inputs/inputs';
+//import { ConnectionService } from './providers/connection-service/';
 
 
 @Component({
@@ -18,7 +22,11 @@ export class MyApp {
 
     this.pages = [
       {component : HomePage, title:'Home',icon: 'home'},
-      {component : MenuTestePage, title:'Menu',icon: 'menu'}
+      {component : MenuTestePage, title:'Alerts',icon: 'alert'},
+      {component : GeneratedTestPage, title:'Ajax',icon: 'flash'},
+      {component : ButtonPage, title:'Button', icon: 'ios-radio-button-on'},
+      {component : CardsPage, title:'Cards', icon: 'browsers'},
+      {component : InputsPage, title:'Inputs', icon: 'code'}
     ];
 
     platform.ready().then(() => {

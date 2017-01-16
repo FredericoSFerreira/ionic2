@@ -1,22 +1,50 @@
 import { Component } from '@angular/core';
-import { NavController, NavParams } from 'ionic-angular';
+import { NavController, NavParams, AlertController } from 'ionic-angular';
 
-/*
-  Generated class for the MenuTeste page.
-
-  See http://ionicframework.com/docs/v2/components/#navigation for more info on
-  Ionic pages and navigation.
-*/
 @Component({
   selector: 'page-menu-teste',
   templateUrl: 'menu-teste.html'
 })
 export class MenuTestePage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {}
+  constructor(public navCtrl: NavController, public navParams: NavParams, private alertController: AlertController) { }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad MenuTestePage');
+  }
+
+  nome: string = 'Sem Nome';
+
+  showAlert() {
+
+    let alert = this.alertController.create({
+      title: 'Login',
+      message: "Enter a name for this new album you're so keen on adding",
+      inputs: [
+        {
+          name: 'title',
+          placeholder: 'Title'
+        },
+      ],
+      buttons: [
+        {
+          text: 'Cancel',
+          handler: data => {
+            console.log('Cancel clicked');
+          }
+        },
+        {
+          text: 'Save',
+          handler: data => {
+            this.nome = data.title;
+          }
+        }
+      ]
+
+    })
+
+    alert.present();
+
   }
 
 }
