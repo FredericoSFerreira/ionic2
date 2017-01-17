@@ -11,6 +11,7 @@ import { ListPage } from '../pages/list/list';
 import { ModalPage } from '../pages/modal/modal';
 import { NavegacaoPage } from '../pages/navegacao/navegacao';
 import { TabsPage } from '../pages/tabs/tabs';
+import { ToastPage } from '../pages/toast/toast';
 //import { ConnectionService } from './providers/connection-service/';
 
 
@@ -34,7 +35,8 @@ export class MyApp {
       { component: ListPage, title: 'List', icon: 'list' },
       { component: ModalPage, title: 'Modal', icon: 'list' },
       { component: NavegacaoPage, title: 'Navegacao', icon: 'list' },
-      { component: TabsPage, title: 'Tabs', icon: 'tab' }
+      { component: TabsPage, title: 'Tabs', icon: 'tab' },
+      { component: ToastPage, title: 'Toast', icon: 'arrow' }
     ];
 
     platform.ready().then(() => {
