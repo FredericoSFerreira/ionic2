@@ -11,6 +11,9 @@ import { ListPage } from '../pages/list/list';
 import { ModalPage } from '../pages/modal/modal';
 import { ModalLoginPage } from '../pages/modal-login/modal-login';
 import { NavegacaoPage } from '../pages/navegacao/navegacao';
+import { TabsPage } from '../pages/tabs/tabs';
+import { HomeTabPage } from '../pages/home-tab/home-tab';
+import { ContatoTabPage } from '../pages/contato-tab/contato-tab';
 
 @NgModule({
   declarations: [
@@ -24,7 +27,10 @@ import { NavegacaoPage } from '../pages/navegacao/navegacao';
     ListPage,
     ModalPage,
     ModalLoginPage,
-    NavegacaoPage
+    NavegacaoPage,
+    TabsPage,
+    HomeTabPage,
+    ContatoTabPage
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -41,7 +47,10 @@ import { NavegacaoPage } from '../pages/navegacao/navegacao';
     ListPage,
     ModalPage,
     ModalLoginPage,
-    NavegacaoPage
+    NavegacaoPage,
+    TabsPage,
+    HomeTabPage,
+    ContatoTabPage
   ],
   providers: [{ provide: ErrorHandler, useClass: IonicErrorHandler }]
 })
