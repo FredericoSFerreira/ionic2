@@ -15,6 +15,7 @@ import { TabsPage } from '../pages/tabs/tabs';
 import { HomeTabPage } from '../pages/home-tab/home-tab';
 import { ContatoTabPage } from '../pages/contato-tab/contato-tab';
 import { ToastPage } from '../pages/toast/toast';
+import { ToolbarPage } from '../pages/toolbar/toolbar';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { ToastPage } from '../pages/toast/toast';
     TabsPage,
     HomeTabPage,
     ContatoTabPage,
-    ToastPage
+    ToastPage,
+    ToolbarPage
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -53,7 +55,8 @@ import { ToastPage } from '../pages/toast/toast';
     TabsPage,
     HomeTabPage,
     ContatoTabPage,
-    ToastPage
+    ToastPage,
+    ToolbarPage
   ],
   providers: [{ provide: ErrorHandler, useClass: IonicErrorHandler }]
 })
