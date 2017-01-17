@@ -7,6 +7,7 @@ import { GeneratedTestPage } from '../pages/generated-test/generated-test';
 import { ButtonPage } from '../pages/button/button';
 import { CardsPage } from '../pages/cards/cards';
 import { InputsPage } from '../pages/inputs/inputs';
+import { ListPage } from '../pages/list/list';
 //import { ConnectionService } from './providers/connection-service/';
 
 
@@ -15,18 +16,19 @@ import { InputsPage } from '../pages/inputs/inputs';
 })
 export class MyApp {
 
-  pages : Array<{component: any,title: string,icon : string}>;
+  pages: Array<{ component: any, title: string, icon: string }>;
   rootPage = HomePage;
 
   constructor(platform: Platform) {
 
     this.pages = [
-      {component : HomePage, title:'Home',icon: 'home'},
-      {component : MenuTestePage, title:'Alerts',icon: 'alert'},
-      {component : GeneratedTestPage, title:'Ajax',icon: 'flash'},
-      {component : ButtonPage, title:'Button', icon: 'ios-radio-button-on'},
-      {component : CardsPage, title:'Cards', icon: 'browsers'},
-      {component : InputsPage, title:'Inputs', icon: 'code'}
+      { component: HomePage, title: 'Home', icon: 'home' },
+      { component: MenuTestePage, title: 'Alerts', icon: 'alert' },
+      { component: GeneratedTestPage, title: 'Ajax', icon: 'flash' },
+      { component: ButtonPage, title: 'Button', icon: 'ios-radio-button-on' },
+      { component: CardsPage, title: 'Cards', icon: 'browsers' },
+      { component: InputsPage, title: 'Inputs', icon: 'code' },
+      { component: ListPage, title: 'List', icon: 'list' }
     ];
 
     platform.ready().then(() => {
@@ -38,7 +40,7 @@ export class MyApp {
 
   }
 
-  openPage(page: any) : void {
+  openPage(page: any): void {
     this.rootPage = page.component
   }
 }

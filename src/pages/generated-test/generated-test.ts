@@ -5,13 +5,13 @@ import { ConnectionService } from './../../providers/connection-service';
 @Component({
   selector: 'page-generated-test',
   templateUrl: 'generated-test.html',
-  providers : [ConnectionService]
+  providers: [ConnectionService]
 })
 export class GeneratedTestPage {
 
-items: Array<{cidade: string}>;
+  items: Array<{ cidade: string }>;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams,private ConnectionService : ConnectionService) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, private ConnectionService: ConnectionService) {
 
 
   }
@@ -22,23 +22,17 @@ items: Array<{cidade: string}>;
 
 
 
-  itemSelected(item : any) : void {
+  itemSelected(item: any): void {
 
     console.log(item.id);
 
 
-    this.ConnectionService.getCep2(item.id).then((resp)=>
-  {
-    let json = resp.json();
+    this.ConnectionService.getCep2(item.id).then((resp) => {
+      let json = resp.json();
       console.log(json)
-
-          // this.items = json;
-
-
-
-  }).catch((erro)=> {
-    console.log(erro);
-  })
+    }).catch((erro) => {
+      console.log(erro);
+    })
 
 
 
@@ -46,20 +40,19 @@ items: Array<{cidade: string}>;
   }
 
 
-  buscarCep() : void {
+  buscarCep(): void {
 
-    this.ConnectionService.getCep().then((resp)=>
-  {
-    let json = resp.json();
+    this.ConnectionService.getCep().then((resp) => {
+      let json = resp.json();
       console.log(json)
 
-          this.items = json;
+      this.items = json;
 
 
 
-  }).catch((erro)=> {
-    console.log(erro);
-  })
+    }).catch((erro) => {
+      console.log(erro);
+    })
 
   }
 

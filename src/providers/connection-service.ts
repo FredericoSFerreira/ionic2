@@ -6,17 +6,22 @@ import 'rxjs/add/operator/toPromise';
 @Injectable()
 export class ConnectionService {
 
-  constructor(public http: Http) {}
-    //console.log('Hello ConnectionService Provider');
+  constructor(public http: Http) { }
+  //console.log('Hello ConnectionService Provider');
 
-    getCep() : Promise<Response> {
-      return this.http.get('https://jsonplaceholder.typicode.com/users').toPromise();
-    }
+  getCep(): Promise<Response> {
+    return this.http.get('https://jsonplaceholder.typicode.com/users').toPromise();
+  }
 
 
-    getCep2(id) : Promise<Response> {
-      return this.http.get('https://jsonplaceholder.typicode.com/users/'+id).toPromise();
-    }
+  getCep2(id): Promise<Response> {
+    return this.http.get('https://jsonplaceholder.typicode.com/users/' + id).toPromise();
+  }
+
+
+  getFotos(): Promise<Response> {
+    return this.http.get('https://jsonplaceholder.typicode.com/photos').toPromise();
+  }
 
 
 }
