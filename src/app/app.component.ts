@@ -9,6 +9,7 @@ import { CardsPage } from '../pages/cards/cards';
 import { InputsPage } from '../pages/inputs/inputs';
 import { ListPage } from '../pages/list/list';
 import { ModalPage } from '../pages/modal/modal';
+import { NavegacaoPage } from '../pages/navegacao/navegacao';
 //import { ConnectionService } from './providers/connection-service/';
 
 
@@ -30,7 +31,8 @@ export class MyApp {
       { component: CardsPage, title: 'Cards', icon: 'browsers' },
       { component: InputsPage, title: 'Inputs', icon: 'code' },
       { component: ListPage, title: 'List', icon: 'list' },
-      { component: ModalPage, title: 'Modal', icon: 'list' }
+      { component: ModalPage, title: 'Modal', icon: 'list' },
+      { component: NavegacaoPage, title: 'Navegacao', icon: 'list' }
     ];
 
     platform.ready().then(() => {
