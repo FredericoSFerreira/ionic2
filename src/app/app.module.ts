@@ -8,7 +8,8 @@ import { ButtonPage } from '../pages/button/button';
 import { CardsPage } from '../pages/cards/cards';
 import { InputsPage } from '../pages/inputs/inputs';
 import { ListPage } from '../pages/list/list';
-
+import { ModalPage } from '../pages/modal/modal';
+import { ModalLoginPage } from '../pages/modal-login/modal-login';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,9 @@ import { ListPage } from '../pages/list/list';
     ButtonPage,
     CardsPage,
     InputsPage,
-    ListPage
+    ListPage,
+    ModalPage,
+    ModalLoginPage
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -33,7 +36,9 @@ import { ListPage } from '../pages/list/list';
     ButtonPage,
     CardsPage,
     InputsPage,
-    ListPage
+    ListPage,
+    ModalPage,
+    ModalLoginPage
   ],
   providers: [{ provide: ErrorHandler, useClass: IonicErrorHandler }]
 })

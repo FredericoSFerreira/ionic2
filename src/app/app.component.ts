@@ -8,6 +8,7 @@ import { ButtonPage } from '../pages/button/button';
 import { CardsPage } from '../pages/cards/cards';
 import { InputsPage } from '../pages/inputs/inputs';
 import { ListPage } from '../pages/list/list';
+import { ModalPage } from '../pages/modal/modal';
 //import { ConnectionService } from './providers/connection-service/';
 
 
@@ -28,7 +29,8 @@ export class MyApp {
       { component: ButtonPage, title: 'Button', icon: 'ios-radio-button-on' },
       { component: CardsPage, title: 'Cards', icon: 'browsers' },
       { component: InputsPage, title: 'Inputs', icon: 'code' },
-      { component: ListPage, title: 'List', icon: 'list' }
+      { component: ListPage, title: 'List', icon: 'list' },
+      { component: ModalPage, title: 'Modal', icon: 'list' }
     ];
 
     platform.ready().then(() => {
