@@ -13,6 +13,7 @@ import { NavegacaoPage } from '../pages/navegacao/navegacao';
 import { TabsPage } from '../pages/tabs/tabs';
 import { ToastPage } from '../pages/toast/toast';
 import { ToolbarPage } from '../pages/toolbar/toolbar';
+import { CameraPage } from '../pages/camera/camera';
 //import { ConnectionService } from './providers/connection-service/';
 
 
@@ -38,7 +39,8 @@ export class MyApp {
       { component: NavegacaoPage, title: 'Navegacao', icon: 'list' },
       { component: TabsPage, title: 'Tabs', icon: 'list' },
       { component: ToastPage, title: 'Toast', icon: 'list' },
-      { component: ToolbarPage, title: 'Toolbar', icon: 'list' }
+      { component: ToolbarPage, title: 'Toolbar', icon: 'list' },
+      { component: CameraPage, title: 'Camera', icon: 'photo' }
     ];
 
     platform.ready().then(() => {
