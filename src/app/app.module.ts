@@ -19,6 +19,7 @@ import { ToolbarPage } from '../pages/toolbar/toolbar';
 import { CameraPage } from '../pages/camera/camera';
 import { NetworkPage } from '../pages/network/network';
 import { BarcodePage } from '../pages/barcode/barcode';
+import { VibrationPage } from '../pages/vibration/vibration';
 
 @NgModule({
   declarations: [
@@ -40,7 +41,8 @@ import { BarcodePage } from '../pages/barcode/barcode';
     ToolbarPage,
     CameraPage,
     NetworkPage,
-    BarcodePage
+    BarcodePage,
+    VibrationPage
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -65,7 +67,8 @@ import { BarcodePage } from '../pages/barcode/barcode';
     ToolbarPage,
     CameraPage,
     NetworkPage,
-    BarcodePage
+    BarcodePage,
+    VibrationPage
   ],
   providers: [{ provide: ErrorHandler, useClass: IonicErrorHandler }]
 })

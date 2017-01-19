@@ -16,6 +16,7 @@ import { ToolbarPage } from '../pages/toolbar/toolbar';
 import { CameraPage } from '../pages/camera/camera';
 import { NetworkPage } from '../pages/network/network';
 import { BarcodePage } from '../pages/barcode/barcode';
+import { VibrationPage } from '../pages/vibration/vibration';
 //import { ConnectionService } from './providers/connection-service/';
 
 
@@ -44,7 +45,8 @@ export class MyApp {
       { component: ToolbarPage, title: 'Toolbar', icon: 'list' },
       { component: CameraPage, title: 'Camera', icon: 'camera' },
       { component: NetworkPage, title: 'NetWork', icon: 'network' },
-      { component: BarcodePage, title: 'BarCode', icon: 'code' }
+      { component: BarcodePage, title: 'BarCode', icon: 'code' },
+      { component: VibrationPage, title: 'Vibration', icon: 'vibration' }
     ];
 
     platform.ready().then(() => {
