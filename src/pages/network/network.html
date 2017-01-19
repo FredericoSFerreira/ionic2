@@ -1,0 +1,15 @@
+<ion-header>
+
+  <ion-navbar>
+    <button ion-button menuToggle icon-only>
+      <ion-icon name='menu'></ion-icon>
+    </button>
+    <ion-title>network</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding>
+  <h2>{{ connectionType }}</h2>
+  <button ion-button full (click)="check()">Verificar Internet</button>
+</ion-content>

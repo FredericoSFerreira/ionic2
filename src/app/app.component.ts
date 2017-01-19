@@ -14,6 +14,8 @@ import { TabsPage } from '../pages/tabs/tabs';
 import { ToastPage } from '../pages/toast/toast';
 import { ToolbarPage } from '../pages/toolbar/toolbar';
 import { CameraPage } from '../pages/camera/camera';
+import { NetworkPage } from '../pages/network/network';
+import { BarcodePage } from '../pages/barcode/barcode';
 //import { ConnectionService } from './providers/connection-service/';
 
 
@@ -40,7 +42,9 @@ export class MyApp {
       { component: TabsPage, title: 'Tabs', icon: 'list' },
       { component: ToastPage, title: 'Toast', icon: 'list' },
       { component: ToolbarPage, title: 'Toolbar', icon: 'list' },
-      { component: CameraPage, title: 'Camera', icon: 'photo' }
+      { component: CameraPage, title: 'Camera', icon: 'camera' },
+      { component: NetworkPage, title: 'NetWork', icon: 'network' },
+      { component: BarcodePage, title: 'BarCode', icon: 'code' }
     ];
 
     platform.ready().then(() => {

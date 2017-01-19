@@ -17,6 +17,8 @@ import { ContatoTabPage } from '../pages/contato-tab/contato-tab';
 import { ToastPage } from '../pages/toast/toast';
 import { ToolbarPage } from '../pages/toolbar/toolbar';
 import { CameraPage } from '../pages/camera/camera';
+import { NetworkPage } from '../pages/network/network';
+import { BarcodePage } from '../pages/barcode/barcode';
 
 @NgModule({
   declarations: [
@@ -36,7 +38,9 @@ import { CameraPage } from '../pages/camera/camera';
     ContatoTabPage,
     ToastPage,
     ToolbarPage,
-    CameraPage
+    CameraPage,
+    NetworkPage,
+    BarcodePage
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -59,7 +63,9 @@ import { CameraPage } from '../pages/camera/camera';
     ContatoTabPage,
     ToastPage,
     ToolbarPage,
-    CameraPage
+    CameraPage,
+    NetworkPage,
+    BarcodePage
   ],
   providers: [{ provide: ErrorHandler, useClass: IonicErrorHandler }]
 })
